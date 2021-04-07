@@ -1,0 +1,120 @@
+---
+title: "L01 Review"
+subtitle: "Data Science III (STAT 301-3)"
+author: Natalie Tomeh 
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    highlight: "tango"
+---
+
+## Overview
+
+The goal of this lab is to review vocabulary and concepts from the Data Science II (STAT 301-2).
+
+
+### Question 1
+
+Outline/Overview of the Steps In a Supervised Machine Learning Process 
+
+* Exploratory Data Analysis 
+  + summarize the variables and visualize their scope 
+* Splitting the data into training/test sets  
+* Model Selection 
+  + Chose models to test and compare
+  + Pick a performance metric
+  + Feature Engineering 
+* Train on the entire training set 
+* Assess the model on the testing set
+* Tuning parameters. 
+* Re-sampling should be done at all phases of the modeling process that could effect the outcome 
+
+
+<br>
+
+### Question 2
+
+Supervised learning has an outcome variable of interest. We can measure the usefulness of the other variables in terms of their relationship to the variable of interest. The goal of unsupervised learning is to try to find the patterns and relationships in the variables. 
+
+<br>
+
+### Question 3 
+
+In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
+
+1. Descriptive Models: summarize the relationship between variables to describe and underlying phenomena.These are typically use unsupervised learning. 
+
+2. Inferential Models: describe how predictor variables effect and are related to the outcome variable. For example, trying to find a causal relationship. These typically use supervised learning methods. 
+
+3. Predictive Models: predict the outcome variable given the inputs. These typically use supervised learning methods. 
+
+<br>
+
+
+### Question 4 
+
+a. Mechanistic models are models based on equations with a set of parameters that can be interpreted.These include a lot of assumptions. For example, an OLS regression has parameters that define a given variable's relationship to the outcome variable and assumes that residuals are normally distributed. 
+
+b. An empirically driven model draws conclusions based on the data itself, not any previously built assumptions.
+
+c. Mechanistic models are synonymous to parametric models, as are empirically driven and nonparametric.
+
+d. In general, mechanistic models are more interpretable as they have clear parameters that describe the relationship between a given variable and the outcome. 
+
+e. The mechanistic model is less flexible than the empirically driven model because imposing assumptions limits the models flexibility. 
+
+f. An empirically driven model will have more variance and thus less bias: each new piece of data has a larger impact on the empirical/flexible model and thus will be more variable and have a lower bias.
+
+<br>
+
+### Question 5 
+
+Ina regression model, the outcome variable is quantitative, whereas in the classification model, the outcome variable is qualitative. 
+
+<br>
+
+### Question 6 
+
+When splitting the data, why it is useful to stratify by the outcome/target variable to avoid class imbalances. It is best to have an equal distribution of outcome variables in training and testing data otherwise the model will be biased. 
+
+<br>
+
+### Question 7 
+
+Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it.
+
+The model is estimated according to each fold in the V-Fold cross validation and repeated. Each fold is used in both testing and training. An RMSE is determined in each model, and the mean is taken across models to estimate. This process is done to reduce noise and avoid overfitting the data. 
+
+
+<br>
+
+### Question 8 
+
+Model tuning is trying to pick the hyper-parameters in a model. It is used to determine the complexities of the model. 
+
+<br>
+
+### Question 9 
+
+Two common performance metrics when dealing with a regression ML problem are RMSE and R-squared. 
+
+Two common performance metrics when dealing with a classification ML problem are accuracy and area under the ROC curve. 
+
+<br>
+
+### Question 10
+
+A political candidate's campaign has detailed voter history data for their constituents. The campaign is interested in two questions:
+
+1. Given a voter's profile/data how likely is it that they will vote in favor of the candidate? 
+*Prediction. We are not concerned with controlling for any single variable, only the aggregate impact on voter preference of all the data.* 
+
+2. How would a voter's likelihood of support for the candidate change if they had personal contact with the candidate?
+*Inferential. We are trying the measure the marginal impact of a single variable.* 
+
+<br>
+
+## Github Repo Link
+
+[https://github.com/ntomeh1721/tomeh_natalie_L01.git](https://github.com/ntomeh1721/tomeh_natalie_L01.git){target="_blank"}
